@@ -343,7 +343,7 @@ function data_processing(){
 					exit 1
 				fi
 			elif [ "${daemon_name}" == "sysv" ]; then
-				curl "https://raw.githubusercontent.com/shell-script/gost-socks5-onekey/master/gost.sh" -o "/etc/init.d/gost"
+				curl "https://raw.githubusercontent.com/anyfeels/gost-socks5-onekey/master/gost-go.sh" -o "/etc/init.d/gost"
 				if [ "$?" -eq "0" ]; then
 					clear
 					echo -e "${ok_font}下载进程守护文件成功。"
